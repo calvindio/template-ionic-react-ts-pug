@@ -1,0 +1,7 @@
+{
+  "name": "template-ionic-react-ts-pug",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
