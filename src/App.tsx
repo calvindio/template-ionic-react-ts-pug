@@ -1,8 +1,15 @@
-import React from 'react';
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
+const React = require('react')
+const { Redirect, Route } = require('react-router-dom')
+const {
+	IonApp,
+	IonRouterOutlet,
+	IonHeader,
+	IonToolbar,
+	IonTitle,
+	IonContent,
+} = require('@ionic/react')
+const { IonReactRouter } = require('@ionic/react-router')
+const Home = require('./pages/Home')
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -25,7 +32,7 @@ import './theme/variables.css';
 
 declare const pug: any
 const App: React.FC = () => {
-  return pug`
+	return pug`
   IonApp
     IonHeader
         IonToolbar
@@ -34,4 +41,4 @@ const App: React.FC = () => {
   `
 }
 
-export default App;
+export default App
