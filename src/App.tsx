@@ -23,7 +23,8 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-const App = () => {
+declare const pug: any
+const App: React.FC = () => {
   return pug`
   IonApp
     IonHeader
